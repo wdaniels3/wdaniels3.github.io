@@ -1,0 +1,149 @@
+/* HTML Styles */
+html {
+    background-image: url(tb_parch9.png);
+}
+
+/* Page Body Styles */
+img {
+    float: left;
+    padding-right: 15px;
+  }
+
+body {
+    background-color: ivory;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    margin: 0 auto;
+    padding: 15px;
+    border-left: 1px solid rgb(51, 51, 51);
+    border-right: 1px solid rgb(51, 51, 51);
+    box-shadow: rgb(51, 51, 51) 15px 0px 25px, rgb(51, 51, 51) -15px 0px 25px;
+}
+
+/* Header Styles */
+header, nav, .logo1 {
+    background: linear-gradient(to right, rgb(0, 128, 0) 30%, black);
+    background-color: transparent;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(240, 178, 7);
+    text-decoration: none;
+}
+
+.resize {
+    width: 70px;
+    height: auto;
+}
+
+.logo1 {
+    cursor: pointer;
+}
+
+hr {
+    border-color: green;
+}
+
+/* Navigation Link Styles */
+.nav_links {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 5px;
+}
+
+/*
+nav li {
+    flex: 1 0 33%;
+  }
+  */
+.nav_links li a {
+    transition: color 0.1s ease-in;
+}
+
+.nav_links li a:hover {
+    color: orangered;
+}
+
+/* Table Styles */
+table#center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table.upskill {
+    border: 10px outset rgb(0, 128, 0);
+    margin-bottom: 25px;
+}
+
+table.upskill th,
+table.upskill td {
+    border: 1px solid blue;
+}
+
+/* Footer Styles */
+footer {
+    color: blue;
+    background: linear-gradient(to right, rgb(0, 128, 0) 30%, black);
+    font-size: 16px;
+    font-style: normal;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: auto;
+        padding: 10px;
+    }
+
+    header {
+        padding: 20px 5%;
+    }
+
+    .resize {
+        width: 50px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        width: 80%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    body {
+        width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+  /* Media query for mobile screens */
+  @media screen and (max-width: 480px) {
+    nav li {
+      flex-basis: 100%;
+    }
+  }

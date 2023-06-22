@@ -23,11 +23,16 @@
         color: blue;
       }
     </style>
+          <script>
+            function redirectToHomePage() {
+              window.location.href = "index.html"; // Replace "index.html" with the actual path to your home page
+            }
+          </script>
    
 </head>
 <body>
     <header>
-        <img class="resize" src="logo2.png" alt="logo">
+        <img id="logo" class="resize" src="logo2.png" alt="logo">
         <nav>         
                <ul class="nav_links">    
                 <li><a href="index.html">Home</a></li>
@@ -90,5 +95,8 @@
     <footer>
         Willie Mack Daniels &#8226; 206 W 6th Street &#8226; (213) 762-0039
     </footer>  
+    <script>
+        document.getElementById("logo").addEventListener("click", redirectToHomePage);
+      </script>
 </body>
 </html>
